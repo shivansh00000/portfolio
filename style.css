@@ -34,12 +34,13 @@ html,body{
     border-radius: 12px;
     background-position: center;
     background-size: 111%;
+    background-repeat: no-repeat;
     font-weight: 700;
     bottom:0px;
     transition: transform 0.8s ease , box-shadow 0.5s ease;
     box-shadow: 5px 5px 15px grey;
     border: 3px solid white;
-    width:280px;
+    width:36.6vh;
     height:50vh;
 }
 
@@ -54,6 +55,7 @@ html,body{
     translate: 100px 0px;
     color:white;
     animation: github 1.3s ease 1;
+    background-size: cover;
 }
 
 .linkedin-img {
