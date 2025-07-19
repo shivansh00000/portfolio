@@ -1,0 +1,390 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top , #7a7978,rgb(225, 225, 225) ,  rgb(225, 225, 225))
+}
+
+#main {
+    height: 100vh;   
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bottom-div {
+    height: 50vh;
+    width:fit-content;
+    position: relative;
+    translate: calc(50vw - 390px) 0px;
+}
+
+.links {
+    padding:8px 10px;
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    position: absolute;
+    cursor: pointer;
+    border-radius: 12px;
+    background-position: center;
+    background-size: 111%;
+    font-weight: 700;
+    bottom:0px;
+    transition: transform 0.8s ease , box-shadow 0.5s ease;
+    box-shadow: 5px 5px 15px grey;
+    border: 3px solid white;
+    width:280px;
+    height:50vh;
+}
+
+.contact-img {
+    background-image: url("images/contact.png");
+    color:white;
+    animation: contact-us 1s ease 1;
+}
+
+.github-img {
+    background-image: url("images/github.jpg");
+    translate: 100px 0px;
+    color:white;
+    animation: github 1.3s ease 1;
+}
+
+.linkedin-img {
+    background-image: url("images/linkedin.png");
+    translate:200px 0px;
+    color:white;
+    animation: linkedin 1.6s ease 1;
+}
+
+.email-img {
+    background-image: url("images/email.png");
+    translate: 300px 0px;
+    color: white;
+    animation: email 1.9s ease 1;
+}
+
+.aboutus-img {
+    background-image: url("images/prototypes.png");
+    translate: 400px 0px;
+    animation: about-us 2.2s ease 1;
+}
+
+.resume-img {
+    background-image: url("images/resume.png");
+    translate: 500px 0px;
+    animation: resume 2.5s ease 1;
+}
+
+#text-box {
+    padding:40px 50px;
+    height:50vh;
+    font-family: 'bebas neue';
+    text-align: justify;
+    font-size: 10vh;
+    line-height: 10vh;
+    background: linear-gradient(-45deg, rgb(42, 41, 41), rgb(99, 97, 97), rgb(42, 41, 41), rgb(127, 126, 126), rgb(135, 135, 135), rgb(127, 126, 126), rgb(99, 97, 97), rgb(127, 126, 126), rgb(127,126,126), rgb(127, 126, 126), rgb(42, 41, 41),  rgb(42,41,41));
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+    background-clip: text;          
+    color: transparent;
+    animation: textbox 3s linear 1;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+}
+
+p{
+    text-align: justify;
+}
+
+name {
+    background: linear-gradient(-45deg, rgb(26, 137, 201),rgb(117, 169, 199),rgb(26, 137, 201));
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color:transparent;
+    background-clip: text;
+    cursor: pointer;
+}
+
+span {
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color:white;
+    background-clip: text;   
+    color: white;
+    animation: span 3.1s steps(1) 1;
+}
+
+
+/*width wise font size*/
+
+@media (min-width: 480px) {
+  #text-box {
+    font-size: 33px;
+    line-height: 33px;
+  }
+}
+
+@media (min-width: 600px) {
+  #text-box {
+    font-size: 38px;
+    line-height: 38px;
+  }
+}
+
+@media (min-width: 735px) {
+  #text-box {
+    font-size: 43px;
+    line-height: 43px;
+  }
+}
+
+@media (min-width: 833px) {
+  #text-box {
+    font-size: 46px;
+    line-height: 46px;
+  }
+}
+
+@media (min-width: 982px) {
+  #text-box {
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+
+@media (min-width: 1222px) {
+  #text-box {
+    font-size: 58px;
+    line-height:58px;
+  }
+}
+
+@media (min-width: 1335px) {
+  #text-box {
+    font-size: 62px;
+    line-height: 61.7px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #text-box {
+    padding: 25px 40px;
+    font-size: 77px;
+    line-height: 80px;
+  }
+}
+
+@media (max-width:833px){
+
+    .links {
+        transform-origin: center bottom;
+        translate: 50vw -40px;
+    }
+
+    .contact-img {
+        rotate: -15deg;
+    }
+
+    .github-img {
+        rotate: -9deg;
+    }
+
+    .linkedin-img {
+        rotate: -3deg;
+    }
+
+    .email-img {
+        rotate: 3deg;
+    }
+
+    .aboutus-img {
+        rotate: 9deg;
+    }
+
+    .resume-img {
+        rotate: 15deg;
+    }
+}
+
+
+/*starting anim*/
+
+@keyframes contact-us {
+    0%{
+        transform: rotate(180deg) translate(-100px, -100px);
+        width:0;
+        height:0;
+        font-size: 0;
+        border:none;
+        background: none;
+        box-shadow: none;
+    }
+    100%{
+        transform: rotate(360deg) translate(0, 0) ;
+        width:280px;
+        height:50vh;
+        font-size: 30px;
+    }
+}
+
+@keyframes github {
+    0%{
+        transform: rotate(180deg) translate(-100px, 100px);
+        width:0;
+        height:0;
+        font-size: 0;
+        border:none;
+        background: none;
+        box-shadow: none;
+    }
+    33.33%{
+        transform: rotate(180deg) translate(-100px, 100px);
+        width:0;
+        height:0;
+        font-size: 0;
+        border:none;
+        background: none;
+        box-shadow: none;
+    }
+    100%{
+        transform: rotate(360deg) translate(0, 0) ;
+        width:280px;
+        height:50vh;
+        font-size: 30px;
+    }
+}
+
+@keyframes linkedin {
+    0%{
+        transform: rotate(180deg) translate(-100px, 100px);
+        width:0;
+        height:0;
+        font-size: 0;
+        border:none;
+        background: none;
+        box-shadow: none;
+    }
+    50%{
+        transform: rotate(180deg) translate(-100px, 100px);
+        width:0;
+        height:0;
+        font-size: 0;
+        border:none;
+        background: none;
+        box-shadow: none;
+    }
+    100%{
+        transform: rotate(360deg) translate(0, 0) ;
+        width:280px;
+        height:50vh;
+        font-size: 30px;
+    }
+}
+
+@keyframes email {
+    0%{
+        transform: rotate(180deg) translate(-100px, 100px);
+        width:0;
+        height:0;
+        font-size: 0;
+        border: none;
+        background: none;
+        box-shadow: none;
+    }
+    60%{
+        transform: rotate(180deg) translate(-100px, 100px);
+        width:0;
+        height:0;
+        font-size: 0;
+        border:none;
+        background: none;
+        box-shadow: none;
+    }
+    100%{
+        transform: rotate(360deg) translate(0, 0) ;
+        width:280px;
+        height:50vh;
+        font-size: 30px;
+    }
+}
+
+@keyframes about-us {
+    0%{
+        transform: rotate(180deg) translate(-100px, 100px);
+        width:0;
+        height:0;
+        font-size: 0;
+        border:none;
+        background: none;
+        box-shadow: none;
+    }
+    66.67%{
+        transform: rotate(180deg) translate(-100px, 100px);
+        width:0;
+        height:0;
+        font-size: 0;
+        border:none;
+        background: none;
+        box-shadow: none;
+    }
+    100%{
+        transform: rotate(360deg) translate(0, 0) ;
+        width:280px;
+        height:50vh;
+        font-size: 30px;
+    }
+}
+
+@keyframes resume {
+    0%{
+        transform: rotate(180deg) translate(-100px, 100px);
+        width:0;
+        height:0;
+        font-size: 0;
+        border:none;
+        background: none;
+        box-shadow: none;
+    }
+    71.43%{
+        transform: rotate(180deg) translate(-100px, 100px);
+        width:0;
+        height:0;
+        font-size: 0;
+        border:none;
+        background: none;
+        box-shadow: none;
+    }
+    100%{
+        transform: rotate(360deg) translate(0, 0) ;
+        width:280px;
+        height:50vh;
+        font-size: 30px;
+    }
+}
+
+@keyframes textbox {
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes span {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
