@@ -9,7 +9,7 @@ imgDivs.forEach((img, idx) => {
     });
     img.addEventListener("mouseleave", () => {
         img.style.transform='translate3d(0 , 0 , 0)';
-        img.style.boxShadow='-5px -5px 15px grey';
+        img.style.boxShadow='5px 5px 15px grey';
         if(idx<5){imgDivs[idx+1].style.transform='translate3d(0 , 0 , 0)'};
         if(idx<4){imgDivs[idx+2].style.transform='translate3d(0 , 0, 0)'};
     });
