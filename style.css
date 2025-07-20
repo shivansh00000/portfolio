@@ -38,7 +38,7 @@ html,body{
     font-weight: 700;
     bottom:0px;
     transition: transform 0.55s ease , box-shadow 0.5s ease;
-    box-shadow: 5px 5px 15px grey;
+    box-shadow: -5px -5px 15px grey;
     border: 3px solid white;
     width:36.6vh;
     height:50vh;
