@@ -89,8 +89,8 @@ html,body{
     height:50vh;
     font-family: 'bebas neue';
     text-align: justify;
-    font-size: 10vh;
-    line-height: 10vh;
+    font-size: 5.35vw;
+    line-height: 5.55vw;
     background: linear-gradient(-45deg, rgb(42, 41, 41), rgb(99, 97, 97), rgb(42, 41, 41), rgb(127, 126, 126), rgb(135, 135, 135), rgb(127, 126, 126), rgb(99, 97, 97), rgb(127, 126, 126), rgb(127,126,126), rgb(127, 126, 126), rgb(42, 41, 41),  rgb(42,41,41));
     -webkit-background-clip: text;  
     -webkit-text-fill-color: transparent;
@@ -120,66 +120,6 @@ span {
     background-clip: text;   
     color: white;
     animation: span 3.1s steps(1) 1;
-}
-
-
-/*width wise font size*/
-
-@media (min-width: 480px) {
-  #text-box {
-    font-size: 33px;
-    line-height: 33px;
-  }
-}
-
-@media (min-width: 600px) {
-  #text-box {
-    font-size: 38px;
-    line-height: 38px;
-  }
-}
-
-@media (min-width: 735px) {
-  #text-box {
-    font-size: 43px;
-    line-height: 43px;
-  }
-}
-
-@media (min-width: 833px) {
-  #text-box {
-    font-size: 46px;
-    line-height: 46px;
-  }
-}
-
-@media (min-width: 982px) {
-  #text-box {
-    font-size: 54px;
-    line-height: 54px;
-  }
-}
-
-@media (min-width: 1222px) {
-  #text-box {
-    font-size: 58px;
-    line-height:58px;
-  }
-}
-
-@media (min-width: 1335px) {
-  #text-box {
-    font-size: 62px;
-    line-height: 61.7px;
-  }
-}
-
-@media (min-width: 1400px) {
-  #text-box {
-    padding: 25px 40px;
-    font-size: 77px;
-    line-height: 80px;
-  }
 }
 
 @media (max-width:833px){
